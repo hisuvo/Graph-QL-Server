@@ -4,7 +4,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon cls-6.js"
+    "start": "nodemon cls-7.js"
   },
   "keywords": [],
   "author": "",
