@@ -1,10 +1,17 @@
+import { devs } from "../data/data.js";
+
 export const resolvers = {
   Query: {
-    testFile: (_, { name }) => {
-      return `My name is ${name}`;
+    getAllDevs: () => {
+      return devs;
     },
-    introductionMyself: (_, { name, age, study, job }) => {
-      return `Hello Everyone,I am ${name}! and ${age} year old.I am study in ${study} and it with work as ${job} developer`;
+
+    getSingleDevs: (_, { id }) => {
+      return devs.find((data) => data.id === id);
+    },
+
+    getDevsLocation: (_, { location }) => {
+      return devs.filter((data) => data.location === location);
     },
   },
 };
