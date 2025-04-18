@@ -4,7 +4,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon cls-7.js"
+    "start": "nodemon devsData.js"
   },
   "keywords": [],
   "author": "",
